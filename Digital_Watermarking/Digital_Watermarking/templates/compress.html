@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/compress_styles.css">
+
+    <title>Compression</title>
+</head>
+<body>
+    <div class="base">
+        <div class="navbar">
+            <h2 class="title">Compression</h2>
+            <a href="/" class="a-button">Watermark Image</a>
+        </div>
+        <div class="base2">
+            <form id="imgCompressionFrom" onsubmit="imageCompressionFrom(event)" class="compression-form">
+                <div>
+                    <label for="input_img" class="form-label">Input Image:</label><br>
+                    <input type="file" id="input_img" name="input_img" accept="image/*" class="form-input"><br>
+                    <img id="inputImgPreview" src="#" alt="Input Image" class="image-preview hide"><br><br>
+                </div>
+            
+                <div>
+                    <div>
+                        <label for="quality" class="form-label">Quality: </label>
+                        <input type="range" id="quality" name="quality" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value" class="form-input">
+                        <output class="form-output">50</output>%
+                    </div>
+                    <input type="submit" value="Go!" class="a-button">
+                </div>
+            </form>    
+
+            <div class="output-div">
+                <h2 id="outputTitle" class="hide">Output: </h2>
+                <p id="initialSize" class="hide"></p>
+                <p id="finalSize" class="hide"></p>
+                <p id="reduction" class="hide"></p>
+                <img id="outputImg" src="#" alt="Output image" class="image-preview hide">
+                <a id="downloadLink" href="#" download class="download-link hide">Download Image</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../static/common.js" ></script>
+    <script src="../static/compress.js" ></script>
+</body>
+</html>

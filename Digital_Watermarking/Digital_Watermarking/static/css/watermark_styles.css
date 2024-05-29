@@ -1,0 +1,73 @@
+
+.base{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.watermark-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-base{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.image-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0;
+}
+
+.form-input {
+    margin: 10px 0;
+}
+
+.hide{
+    display: none;
+}
+
+.watermark-filters{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 100px 0;
+}
+
+.image-preview {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 20px auto;
+}
+
+.output-img{
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.output{
+    display: flex;
+    flex-direction: column
+}
+
+.download-link {
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    line-height: 50px;
+    color: white;
+    background-color: #4CAF50;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.download-link:hover {
+    background-color: #45a049;
+}
